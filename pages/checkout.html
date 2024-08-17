@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECTOUT</title>
+    <link rel="icon" href="./images/icon.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheet/index.css">
+    <script src="https://kit.fontawesome.com/bb4b9dd0bd.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar  navbar-expand-lg bg-success bg-gradient  bg_color sticky-top ">
+        <div class="container-fluid">
+            <h2 class="ms-5 text-white tech"><span class="text-warning">O</span>Y<span class="text-warning">N</span> OYINZ STORE</h2>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5  mb-2 mb-lg-0 ms-auto gap-5">
+              <li class="nav-item">
+                <a class="nav-link  text-white" aria-current="page" href="../index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <div class="btn-group">
+                  <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./clothes.html">Clothes</a></li>
+                    <li><a class="dropdown-item" href="./electronis.html">Electronics</a></li>
+                    <li><a class="dropdown-item" href="./furnitures.html">Furnitures</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./cart.html">View Cart</a></li>
+                  </ul>
+                </div>
+                <!-- <a class="nav-link  text-white" aria-current="page" href="./pages/shops.html">Shop</a> -->
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./about.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white " href="./contact.html">Contact Us</a>
+              </li>
+
+              <li class="nav-item">             
+                <a class="nav-link text-white " href="./cart.html">
+                <i class="fa-solid fa-cart-shopping fw-bold text-white"></i>
+                </a>
+              </li>
+
+            </ul>
+
+              
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- Hero Section -->
+    <div class="bg_color text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-warning">WELCOME TO OYINZ STORE!</h1>
+            <p class="lead fw-bold">We believe in making shopping an enjoyable experience with the best products at unbeatable prices.</p>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Checkout</h2>
+
+        <!-- Billing Information -->
+        <div class="card mb-4">
+            <div class="card-header bg_color text-warning">
+                Billing Information
+            </div>
+            <div class="card-body">
+                <form id="billingForm">
+                    <div class="form-group">
+                        <label for="billingName">Name</label>
+                        <input type="text" class="form-control" id="billingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billingAddress">Address</label>
+                        <input type="text" class="form-control" id="billingAddress" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billingEmail">Email</label>
+                        <input type="email" class="form-control" id="billingEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="billingPhone">Phone Number</label>
+                        <input type="tel" class="form-control" id="billingPhone" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Shipping Information -->
+        <div class="card mb-4">
+            <div class="card-header bg_color text-warning">
+                Shipping Information
+            </div>
+            <div class="card-body">
+                <form id="shippingForm">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="sameAsBilling">
+                        <label class="form-check-label" for="sameAsBilling">Same as billing information</label>
+                    </div>
+                    <div id="shippingDetails">
+                        <div class="form-group">
+                            <label for="shippingName">Name</label>
+                            <input type="text" class="form-control" id="shippingName">
+                        </div>
+                        <div class="form-group">
+                            <label for="shippingAddress">Address</label>
+                            <input type="text" class="form-control" id="shippingAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="shippingEmail">Email</label>
+                            <input type="email" class="form-control" id="shippingEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="shippingPhone">Phone Number</label>
+                            <input type="tel" class="form-control" id="shippingPhone">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="card mb-4">
+            <div class="card-header bg_color text-warning">
+                Payment Information
+            </div>
+            <div class="card-body">
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="card mb-4">
+            <div class="card-header bg_color text-warning">
+                Order Summary
+            </div>
+            <div class="card-body" id="orderSummary">
+                <!-- Order Summary details will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Place Order Button -->
+        <div class="text-center">
+            <button class="btn px-5 p-3 bg_color text-warning fw-bold btn-block" id="placeOrderBtn">Place Order</button>
+        </div>
+    </div>
+
+
+
+    <!-- footer section -->
+  <footer class="text-center bg_color text-lg-start border border-white mt-xl-5 pt-4">
+    <!-- Grid container -->
+    <div class="container p-4">
+      
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-warning">OUR WORLD</h5>
+  
+          <ul class="list-unstyled mb-4">
+            <li>
+              <a href="#!" class="text-white">About us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Collections</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Environmental philosophy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Explore New</a>
+            </li>
+          </ul>
+        </div>
+        
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-warning">Assistance</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Contact us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Size Guide</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Shipping Information</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Returns & Exchanges</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Payment</a>
+            </li>
+          </ul>
+        </div>
+        
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-warning">Contacts</h5>
+      
+          <ul class="list-unstyled">
+            
+            <li>
+              <p class="text-white"> <b>Phone:</b> 08135883306  </p>
+            </li>
+  
+            <li>
+              <p class="text-white"><b>Email:</b> info@gethome.com</p>
+            </li>
+            <li>
+              
+            </li>
+          </ul>
+        </div>
+        
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center">
+          <h5 class="text-uppercase  mb-4 text-warning">Sign up to our newsletter</h5>
+  
+          <div class="form-outline form-white mb-4">
+            <input type="email" placeholder="Enter Email" id="form5Example2" class="form-control" />
+            
+          </div>
+  
+          <button type="submit" class="btn btn-outline-white border border-white btn-block text-warning">Subscribe</button>
+        </div>
+        
+      </div>
+  
+    </div>
+  
+    <div>
+      <p class="text-center">
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a
+             class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+             <i class="fab fa-facebook-f"></i>Facebook</a>
+  
+          <!-- Twitter -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             href="#!"
+             role="button"
+             ><i class="fab fa-twitter"></i
+            >Twitter</a>
+  
+          <!-- Google -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             href="#!"
+             role="button"
+             ><i class="fab fa-google"></i
+            >Google</a>
+  
+          <!-- Instagram -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             href="#!"
+             role="button"
+             ><i class="fab fa-instagram"></i
+            >Instagram</a>
+  
+          <!-- Linkedin -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             href="#!"
+             role="button"
+             ><i class="fab fa-linkedin-in"></i
+            >LinkedIn</a>
+  
+          <!-- Github -->
+          <a
+             class="btn btn-outline-light btn-floating m-1"
+             href="#!"
+             role="button"
+             ><i class="fab fa-github"></i
+            >Github</a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+  
+  
+      </p>
+    </div>
+    
+  
+    
+    <div class="text-center p-3 border-top border-white">
+     <p class="text-white"> © 2020 Copyright: <a class="text-warning" href="https://mdbootstrap.com/">gethome.com</a></p>
+      
+    </div>
+    
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

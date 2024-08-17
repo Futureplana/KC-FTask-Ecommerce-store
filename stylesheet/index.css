@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bg_color{
+    background-color: #28464B !important;
+}
+
+/* custom text color */
+.text_color{
+    color: #030521 !important;
+    
+}
+
+/* card body styling */
+.card_bg1{
+    background-image: url("../images/Wedding\ Suits.jpeg") !important;
+    background-size: cover;
+    height: 25rem;
+}
+
+.card_bg2{
+    background-image: url("../images/blazer.jpeg") !important;
+    background-size: cover;
+    height: 25rem;
+}
+
+.card_bg3{
+    background-image: url("../images/clothe1.jpeg") !important;
+    background-size: cover;
+    height: 25rem;
+}
+
+.card_body{
+    margin-top: 15rem !important;
+}
+
+.bg-image{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+
+.bg-image1{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+.bg-image2{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+.bg-image3{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+.bg-image4{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+.bg-image5{
+    background-image: url('../images/bg_hero.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+
+.bg-image6{
+    background-image: url('../images/bg_furniture.jpeg');
+             background-repeat: no-repeat;
+             background-size: cover;
+}
+
+
+
+.bg_hero{
+    padding-top: 3rem;
+}
+
+.f_size{
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+
+.view_more{
+    display: inline;
+}
+
+.bg_product{
+    background-color: #f8faf9;
+}
+
+
+
